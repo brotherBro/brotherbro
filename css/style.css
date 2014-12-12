@@ -1,0 +1,274 @@
+/*RESET CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*############################################*/
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(fonts/ynjmflsm-webfont.eot); 
+  src: url(fonts/ynjmflsm-webfont.woff2) format('woff2'),
+       url(fonts/ynjmflsm-webfont.woff) format('woff'),
+       url(fonts/ynjMfLSM.ttf),
+       url(fonts/ynjMfLSM.ttf)  format('truetype'),
+}
+
+@font-face {
+    font-family: OpenSansLight;
+	src: url(fonts/ynjMfLSM.ttf);
+}
+
+.mainWrap {
+	background-image: url(back.png);
+	background-size: cover;
+	display: flex;
+	width: 100%;
+}
+
+@media screen and (max-width: 1360px) {
+	.mainWrap {
+		background-size: auto;
+	}
+}
+
+.left {
+	width: 40%;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.8);
+  	position: relative;
+
+}
+
+.right {
+	width: 60%;
+	float: right;
+	background-color: rgba(34, 34, 34, 0.5);
+	position: relative;
+}
+
+@media screen and (max-width: 880px) {
+	.buttons {
+		margin: 10px auto !important;
+		width: 220px !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.mainWrap {
+		display: block !important;
+	}
+
+	.left {
+		float: none;
+		width: 100%;
+		height: auto !important;
+	}
+
+	.right {
+		float: none;
+		width: 100%;
+		height: auto !important;
+	}
+
+		.logo img {
+			width: 96% !important;
+			float: none !important;
+			margin-right: 0px !important;
+			margin-top: 0px !important;
+			margin: 2%;
+		}
+
+		.nav {
+			margin: auto;
+			float: none !important;
+			margin-right: 0px !important;
+			margin-top: 0px !important;
+		}
+
+			.nav ul {
+				text-align: center !important;
+			}
+
+		.description {
+			padding: 10px;
+			padding-top: 14px;
+			margin: auto !important;
+		}
+
+		.buttons {
+			margin: 20px auto !important;
+			width: auto !important;
+		}
+
+		.contacts {
+			text-align: center !important;
+			margin-top: 18px !important;
+		}
+
+		footer p {
+		text-align: center !important;
+		position: static !important;
+		}
+}
+
+@media screen and (max-width: 480px) {
+	.description {
+		width: auto !important;
+	}
+
+	.buttons {
+		margin: auto !important;
+		width: 220px !important;
+	}
+}
+
+.logo img{
+	width: 70%;
+	float: right;
+	margin-right: 10%;
+	margin-top: 23%;
+}
+
+.nav {
+	float: right;
+	margin-right: 10%;
+	margin-top: 10%;
+}
+
+	.nav ul {
+		font-size: 1em;
+		font-family: OpenSansLight;
+		line-height: 1.2;
+		text-align: right;
+	}
+
+		.nav ul li{
+			padding: 8px 13px 13px 26px;
+			margin-top: 8px;
+			cursor: pointer;
+		}
+
+		.nav ul li:hover {
+			outline: 1px solid rgb(34, 34, 34);
+		}
+
+.description {
+	width: 436px;
+	margin-left: 6%;
+	margin-top: 16%;
+}
+
+	.description p {
+		font-size: 1.250em;
+		font-family: OpenSansLight;
+		color: rgb(255, 255, 255);
+		line-height: 1.4;
+		text-align: left;
+	}
+
+		.description p span {
+			font-weight: bold;
+		}
+
+.buttons {
+	margin-left: 6%;
+	margin-top: 35px;
+	max-width: 466px;
+}	
+
+
+		.buttons .btn {
+			border: 1px solid white;
+			font-size: 1em;
+			font-family: OpenSansLight;
+			color: rgb(255, 255, 255);
+			text-align: center;
+			padding: 15px 0px;
+			font-weight: bold;
+			width: 215px;
+			float: left;
+			margin-bottom: 16px;
+		}
+
+		.buttons .btn:nth-child(2n+1) {
+			margin-right: 32px;
+		}
+
+		.buttons div:hover {
+			background-color: white;
+			color: #36a9e1;
+			transition: 1s;
+			cursor: pointer;
+		}
+
+.contacts {
+	font-family: OpenSansLight;
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	text-align: left;
+	margin-left: 6%;
+	margin-top: 18px;
+}
+	
+	.contacts .email {
+		color: #31b2f1;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+footer p {
+  font-size: 0.875em;
+  font-family: OpenSansLight;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  bottom: 1%;
+  left: 2%;
+}
+
+.selected {
+	background-color: #222222;
+	color: #e3e3e3;
+}
